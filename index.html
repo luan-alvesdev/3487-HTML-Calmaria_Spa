@@ -122,7 +122,7 @@
                 <img src="./assets/contato-img-3.png"
                     alt="Mulher em uma banheira com pétalas de rosa, com apenas mãos e pernas aparentes, segurando um livro e com uma bandeija com uvas e chá.">
             </div>
-            <div action="." class="container__contato--form">
+            <form action="." class="container__contato--form">
                 <div class="container__contato--form-conteudo">
                     <h5 class="container__contato--form-conteudo-titulo">Entre em contato</h5>
                     <p class="container__contato--form-conteudo-texto">Reserve seu horário, tire dúvidas ou proponha
@@ -132,13 +132,13 @@
                 </div>
                 <div class="container__contato--inputs">
                     <label for="nome">Nome</label>
-                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome">
+                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Digite seu email" id="email" name="email">
+                    <input type="email" placeholder="Digite seu email" id="email" name="email" required>
                     <label for="telefone">Telefone</label>
-                    <input type="text" placeholder="(XX) XXXX-XXXX" id="telefone" name="telefone">
-                    <div>
-                        <p class="container__contato--inputs--titulo">Prefere contato por:</p>
+                    <input type="text" placeholder="(XX) XXXX-XXXX" id="telefone" name="telefone" required>
+                    <fieldset>
+                        <legend class="container__contato--inputs--titulo">Prefere contato por:</legend>
                         <div class="container__contato--inputs--div">
                             <div>
                                 <input type="radio" id="ligacao" name="ligacao">
@@ -153,12 +153,12 @@
                                 <label for="email-contato">Email</label>
                             </div>
                         </div>
-                    </div>
+                    </fieldset>
                     <label for="mensagem">Mensagem</label>
-                    <textarea type="text" placeholder="Digite seu email" id="mensagem" name="mensagem"></textarea>
+                    <textarea type="text" placeholder="Envie sua mensagem" maxlength="500" id="mensagem" name="mensagem"></textarea>
                 </div>
-                <button>Enviar</button>
-            </div>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
